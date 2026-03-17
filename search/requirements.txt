@@ -1,10 +1,21 @@
-fastapi
-uvicorn
-sentence-transformers
-faiss-cpu
-numpy<2.0
-torch==2.2.2
+fastapi>=0.115
+uvicorn>=0.30
+
+# core ML
+numpy>=2.3
+scikit-learn>=1.8
+
+# embeddings / LLM
+sentence-transformers>=3.0.0
+torch>=2.9.0
+
+# vector search
+faiss-cpu>=1.13.0
+
+# retrieval
 rank-bm25
-scikit-learn
-pydantic
+
+# utils
+pydantic>=2.12
 python-dotenv
+openai>=2.0.0
