@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+node_modules/
+.next/
+*.log
+
+# large files (VERY IMPORTANT)
+embeddings/
+vector_db/
+data/
