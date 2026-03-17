@@ -50,6 +50,9 @@ def chat(request: QuestionRequest):
             time.sleep(0.02)  # simulate token streaming
 
     return StreamingResponse(stream_answer(), media_type="text/plain")
+@app.get("/health")
+def health():
+    return {"status": "ok"}
 # from fastapi import FastAPI
 # from pydantic import BaseModel
 # from rag_pipeline import adaptive_rag
